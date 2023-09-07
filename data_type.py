@@ -1,6 +1,6 @@
-num_1 = 1
-num_2 = 2
-string_1 = 3
+num_1 = 1        # int
+num_2 = 2.3      # float
+string_1 = '3'   # str 
 print(type(num_1), type(num_2), type(string_1))
 # типи можна між собою конвертувати (змінювати)
 
