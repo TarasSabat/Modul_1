@@ -83,16 +83,33 @@
 # print(f'Dollar: {dollar}')
 # print(f'Cent: {cent}')
 
-# В Інтернет-магазині зроблено 4 покупки: на суми які вводяться користувачем.
-# Зі скількох доларів і центів складатиметься підсумкова сума.
-price1 = float(input('Перша сума: '))
-price2 = float(input('Друга сума: '))
-price3 = float(input('Третя сума: '))
-price4 = float(input('Четверта сума: '))
-cost = price1 + price2 + price3 + price4
-cost = (round(cost, 2))
-dollar = int(cost)
-cent = int((cost % dollar) * 100)
-print(f'Сума: {cost}')
-print(f'Доларів: {dollar}')
-print(f'Центів: {cent}')
+# # В Інтернет-магазині зроблено 4 покупки: на суми які вводяться користувачем.
+# # Зі скількох доларів і центів складатиметься підсумкова сума.
+# price1 = float(input('Перша сума: '))
+# price2 = float(input('Друга сума: '))
+# price3 = float(input('Третя сума: '))
+# price4 = float(input('Четверта сума: '))
+# cost = price1 + price2 + price3 + price4
+# cost = (round(cost, 2))
+# dollar = int(cost)
+# cent = int((cost % dollar) * 100)
+# print(f'Сума: {cost}')
+# print(f'Доларів: {dollar}')
+# print(f'Центів: {cent}')
+
+# # Для кава-брейків на конференції закуплено:
+# # х круасанів, у стаканчиків, z упаковок кави.
+# # Ціна круасана $1.04, ціна стаканчика - $0.34, ціна упаковки кави $4.42
+# # Скласти програму, яка обчислює,
+# # скільки повних доларів пішло на закупівлю їжі для кава-брейків, і яка її вартість у центах.
+# x = float(input("Введіть кількість круасанів: "))
+# y = float(input("Введіть кількість стаканчиків: "))
+# z = float(input("Введіть кількість упаковок кави: "))
+# price_x = 1.04
+# price_y = 0.34
+# price_z = 4.42
+# sum_dollars = int(price_x * x + price_y * y + price_z *z)
+# sum_cents = int((price_x * x + price_y * y + price_z *z) * 100)
+# print(f'Повних доларів: {sum_dollars}')
+# print(f'Вартість у центах: {sum_cents}')
+
