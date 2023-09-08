@@ -60,14 +60,39 @@
 # pages = n / 10
 # print(f'Потрібна кількість сторінок: {math.ceil(pages)}')
 
-# Скласти програму, яка переводить час із секунд, визначаючи повну кількість годин, хвилин і секунд
-# (наприклад, час 5000 секунд це 1 година 23 хвилини 20 секунд 5000=1*3600+23*60+20).
-sekonds1 = int(input('Введіть кількість секунд: '))
-hours = sekonds1 // 3600
-minutes = (sekonds1 - hours * 3600) // 60
-sekonds2 = ((sekonds1 - hours * 3600) - minutes * 60)
-print(f'Введена кількість секунд це: {hours} год. {minutes} хв. {sekonds2} сек.')
+# # Скласти програму, яка переводить час із секунд, визначаючи повну кількість годин, хвилин і секунд
+# # (наприклад, час 5000 секунд це 1 година 23 хвилини 20 секунд 5000=1*3600+23*60+20).
+# sekonds1 = int(input('Введіть кількість секунд: '))
+# hours = sekonds1 // 3600
+# minutes = (sekonds1 - hours * 3600) // 60
+# sekonds2 = ((sekonds1 - hours * 3600) - minutes * 60)
+# print(f'Введена кількість секунд це: {hours} год. {minutes} хв. {sekonds2} сек.')
 
+# # В Інтернет-магазині зроблено 4 покупки: на $34.34, $12.01, $17.42, $4.93.
+# # Зі скількох доларів і центів складатиметься підсумкова сума.
+# price1 = 34.34
+# price2 = 12.01
+# price3 = 17.42
+# price4 = 4.93
 
+# cost = price1 + price2 + price3 + price4
+# dollar = int(cost)
+# # cent = float(cost - dollar)
+# cent = int((cost - int(cost)) * 100)
+# print(f'Sum: {cost}')
+# print(f'Dollar: {dollar}')
+# print(f'Cent: {cent}')
 
-
+# В Інтернет-магазині зроблено 4 покупки: на суми які вводяться користувачем.
+# Зі скількох доларів і центів складатиметься підсумкова сума.
+price1 = float(input('Перша сума: '))
+price2 = float(input('Друга сума: '))
+price3 = float(input('Третя сума: '))
+price4 = float(input('Четверта сума: '))
+cost = price1 + price2 + price3 + price4
+cost = (round(cost, 2))
+dollar = int(cost)
+cent = int((cost % dollar) * 100)
+print(f'Сума: {cost}')
+print(f'Доларів: {dollar}')
+print(f'Центів: {cent}')
